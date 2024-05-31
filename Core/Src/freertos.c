@@ -285,7 +285,7 @@ void SHOOT_TASK(void const * argument)
   for(;;)
   {
 		currentTime = xTaskGetTickCount();
-		Shoot_Task();
+//		Shoot_Task();
 		vTaskDelayUntil(&currentTime, 3);//¾ø¶ÔÑÓÊ±    
   }
   /* USER CODE END SHOOT_TASK */

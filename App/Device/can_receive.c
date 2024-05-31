@@ -91,7 +91,6 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 				#if(MCU==UP)
 				case GIM_YAW_ID:
 					CAN_Date_Decode(&Gimbal.YAW.Motor_Data.CAN_GetData, rx_data); 
-					break;
 				default: {break;}	
 
 				#elif(MCU==DOWN)
